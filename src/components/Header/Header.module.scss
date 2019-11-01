@@ -1,0 +1,11 @@
+@import '../../variables.scss';
+
+header {
+  background-color: $background;
+  color: $font-color;
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

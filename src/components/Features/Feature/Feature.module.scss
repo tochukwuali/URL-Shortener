@@ -1,0 +1,28 @@
+@import '../../../variables.scss';
+
+.feature {
+
+}
+
+.img {
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: $violet;
+  position: relative;
+  img {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+}
+
+.box {
+  display: block;
+  background: $background;
+  width: 70%;
+  height: 200px;
+  border-radius: 3px;
+  padding: 30px;
+}

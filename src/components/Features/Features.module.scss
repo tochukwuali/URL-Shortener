@@ -1,0 +1,10 @@
+@import '../../variables.scss';
+
+.features {
+  background-color: $background-purple;
+  .details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,21 @@
+@import '../../variables.scss';
+
+footer {
+  background-color: $dark-violet;
+  color: $font-color-secondary;
+  font-weight: 300;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}

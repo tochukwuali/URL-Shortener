@@ -1,0 +1,15 @@
+@import '../../variables.scss';
+
+.Input {
+  background: $background;
+  background: linear-gradient(180deg, $background 50%, $background-purple 50%);
+}
+
+.inputContainer {
+  width: 70%;
+  height: 100px;
+  background-image: url('../../assets/img/bg-shorten-desktop.svg');
+  background-color: $violet;
+  border-radius: 5px;
+  margin: 0 auto;
+}
