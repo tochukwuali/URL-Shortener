@@ -1,0 +1,35 @@
+@import '../../../variables.scss';
+
+.container {
+  background-color: $background;
+  width: 100%;
+  border-radius: 5px;
+  margin: 0px auto 20px;
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  input {
+    color: $cyan;
+    height: 50px;
+    text-align: right;
+  }
+}
+
+div {
+  align-self: center;
+}
+
+
+
+button {
+  height: 40px;
+  margin: 25px 0px 25px 20px;
+  min-width: 60px;
+  border-radius: 5px;
+  padding: 0px 30px;
+}
+
+.copied {
+  background-color: $dark-violet;
+}

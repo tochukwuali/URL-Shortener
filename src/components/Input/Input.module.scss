@@ -3,19 +3,19 @@
 .Input {
   background: $background;
   background: linear-gradient(180deg, $background 50%, $background-purple 50%);
-  padding: 40px 80px;
+  padding: 40px 120px 20px;
 }
 
 .inputContainer {
-  width: 70%;
-  height: 100px;
+  width: 100%;
+  min-height: 100px;
   background-image: url('../../assets/img/bg-shorten-desktop.svg');
   background-color: $violet;
   border-radius: 5px;
   margin: 0 auto;
   input {
     height: 50px;
-    width: 70%;
+    width: 80%;
     padding: 0 30px;
     margin: 25px 0px 25px 40px;
     border-radius: 5px;
@@ -25,9 +25,21 @@
   }
   button {
     height: 50px;
-    margin: 25px 40px 25px 20px;
     min-width: 80px;
     border-radius: 5px;
     padding: 10px 30px;
+  }
+  p {
+    color: red;
+    padding: 0px 0 20px 40px;
+    font-style: italic;
+    font-weight: $light;
+  }
+}
+
+.empty {
+  border: 0.5px solid red;
+  ::placeholder {
+    color: red;
   }
 }
