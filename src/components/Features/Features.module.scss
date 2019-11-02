@@ -2,6 +2,10 @@
 
 .features {
   background-color: $background-purple;
+  padding: 40px 120px;
+  p {
+    color: $grayish-violet;
+  }
   .details {
     display: flex;
     flex-direction: row;

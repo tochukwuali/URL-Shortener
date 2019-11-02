@@ -5,7 +5,9 @@ const Feature = (props) => {
   return (
     <div className={classes.feature}>
       <div className={classes.img}>
-        <img src={props.img} alt=""/>
+        <div>
+          <img src={props.img} alt=""/>
+        </div>
       </div>
       <div className={classes.box}>
         <h3>{props.heading}</h3>

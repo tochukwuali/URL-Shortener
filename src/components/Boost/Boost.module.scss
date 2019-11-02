@@ -2,5 +2,11 @@
 
 .boost {
   background-color: $violet;
-  background-image: url('../../assets/img/bg-boost-desktop.svg')
+  background-image: url('../../assets/img/bg-boost-desktop.svg');
+  padding: 40px 120px;
+  color: $font-color-secondary;
+  button {
+    padding: 10px 30px;
+    border-radius: 20px;
+  }
 }

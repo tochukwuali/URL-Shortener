@@ -35,6 +35,17 @@ table {
   empty-cells: show;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: $cyan;
+  color: $font-color-secondary;
+}
+
 *,
 :before,
 :after {
@@ -72,4 +83,14 @@ body {
 :active,
 :focus {
   outline: none;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: $bold;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: $bold;
 }
