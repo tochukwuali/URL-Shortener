@@ -3,8 +3,15 @@
 .features {
   background-color: $background-purple;
   padding: 40px 120px;
-  p {
+  h2 {
+    text-align: center;
+  }
+  h2 + p {
     color: $grayish-violet;
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+    line-height: 2;
   }
   .details {
     display: flex;

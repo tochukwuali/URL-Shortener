@@ -28,18 +28,23 @@
     min-width: 80px;
     border-radius: 5px;
     padding: 10px 30px;
+    margin-right: 20px;
   }
   p {
-    color: red;
+    color: $red;
     padding: 0px 0 20px 40px;
     font-style: italic;
     font-weight: $light;
+    margin-top: -20px;
+    font-size: 0.8rem;
   }
 }
 
 .empty {
-  border: 0.5px solid red;
-  ::placeholder {
-    color: red;
-  }
+  border: 0.5px solid $red;
+  margin-bottom: 10px;
+}
+
+.empty::placeholder {
+  color: $red;
 }

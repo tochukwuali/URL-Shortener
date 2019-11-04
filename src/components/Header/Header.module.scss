@@ -9,9 +9,22 @@ header {
     flex-direction: row;
     justify-content: space-between;
     color: $grayish-violet;
+    span {
+      vertical-align: top;
+    }
+    span:first-of-type {
+      margin-right: 30px;
+    }
+    a:hover {
+      color: $font-color;
+    }
+    a + a {
+      margin-left: 30px;
+    }
     button {
       padding: 10px 20px;
       border-radius: 20px;
+      margin-left: 30px;
     }
   }
 }

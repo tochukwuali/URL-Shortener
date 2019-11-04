@@ -14,11 +14,13 @@ const Features = () => {
       advanced statistics dashboard.</p>
     <div className={classes.details}>
         <Feature
+          className={classes.feature1}
           heading="Brand Recognition"
           paragraph="Boost your brand recognition with each click. Generic links don’t
           mean a thing. Branded links help instil confidence in your content."
           img={recognition}/>
         <Feature
+          className={classes.feature2}
           heading="Detailed Records"
           paragraph="Gain insights into who is clicking your links. Knowing when and where
           people engage with your content helps inform better decisions."

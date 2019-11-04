@@ -11,12 +11,51 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-bottom: 40px;
+  flex-wrap: wrap;
+  @media (max-width: 650px) {
+    flex-direction: column;
+    align-content: center;
+  }
+  div {
+    align-self: flex-start;
+    @media (max-width: 900px) {
+      flex-basis: 200px;
+    }
+    @media (max-width: 650px) {
+      flex-basis: auto;
+    }
+    a svg {
+      height: 1.5em;
+      width: 1.5em;
+      @media (max-width: 900px) {
+        margin-top: 20px;
+      }
+    }
+    li {
+      color: $grayish-violet;
+    }
+    li:hover {
+      color: $cyan;
+      cursor: pointer;
+    }
+    div a:hover {
+      color: $cyan;
+    }
+  }
+  a + a {
+    margin-left: 10px;
+  }
+}
+
+svg:hover {
+  fill: $cyan;
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 0.6rem;
   text-align: center;
   a {
-    color: hsl(228, 45%, 44%);
+    color: lighten($cyan, 30%);
   }
 }

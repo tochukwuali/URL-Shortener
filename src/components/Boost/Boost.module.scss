@@ -5,8 +5,10 @@
   background-image: url('../../assets/img/bg-boost-desktop.svg');
   padding: 40px 120px;
   color: $font-color-secondary;
+  text-align: center;
   button {
     padding: 10px 30px;
     border-radius: 20px;
+    margin-bottom: 5px;
   }
 }

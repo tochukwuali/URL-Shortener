@@ -2,7 +2,7 @@ import React from 'react';
 import {FaFacebookSquare, FaTwitter, FaInstagram} from 'react-icons/fa';
 import {IoLogoPinterest} from 'react-icons/io'
 import classes from './Footer.module.scss';
-import Logo from '../../assets/img/logo.svg';
+import Logo from '../UI/Logo/Logo';
 
 
 const Footer = () => {
@@ -10,7 +10,9 @@ const Footer = () => {
   return (
     <footer>
       <div className={classes.flexbox}>
-        <div><img src={Logo} alt="Logo"/></div>
+        <div>
+          <Logo/>
+        </div>
         <div>
           <h4>Features</h4>
           <ul>
@@ -44,8 +46,8 @@ const Footer = () => {
         </div>
       </div>
       <div className={classes.attribution}>
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>.
-        Coded by <a href="josyhartig.com" target="_blank" rel="noopener noreferrer">Josy</a>.
+        Coded by <a href="https://josyhartig.com" target="_blank" rel="noopener noreferrer">Josy</a>.
+         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>.
       </div>
     </footer>
   )
