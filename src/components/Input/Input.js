@@ -4,6 +4,8 @@ import Loader from '../UI/Loader/Loader';
 
 const Input = (props) => {
   const [isVisible, setIsVisible] = useState(false);
+  const [isError, setIsError] = useState(false);
+
   useEffect(() => {
     if(props.empty) {
       setIsVisible(true);
@@ -11,6 +13,14 @@ const Input = (props) => {
       setIsVisible(false);
     }
   }, [props.empty])
+
+  useEffect(() => {
+    if(props.error) {
+      setIsError(true);
+    } else {
+      setIsError(false);
+    }
+  }, [props.error])
 
   return (
     <div className={classes.Input}>
@@ -23,7 +33,7 @@ const Input = (props) => {
         <button onClick={props.clicked}>
           {props.loading ? <Loader/> : "Shorten It!"}
         </button>
-        {isVisible ? <p>Please add a link.</p> : null}
+        {isVisible ? <p>Please add a link.</p> : isError ? <p>Something went wrong. Please try again.</p> : null}
       </div>
     </div>
   )

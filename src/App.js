@@ -24,7 +24,6 @@ const App = () => {
       setUrls(JSON.parse(localStorage.getItem('URLs')));
     }
   }
-  console.log(urls);
 
   const onChangeHandler = (e) => {
     setInputValue(e.target.value);
@@ -41,7 +40,6 @@ const App = () => {
       axios.post('https://rel.ink/api/links/', {'url' : inputValue})
         .then(res => {
           setIsLoading(false);
-          console.log(res.data.hashid);
           const newURLs = [...urls];
           newURLs.unshift({url: inputValue, shortURL: `https://rel.ink/${res.data.hashid}`});
           setUrls(newURLs);
@@ -53,8 +51,6 @@ const App = () => {
         });
     }
   }
-
-  console.log(urls);
 
   const copyHandler = (e) => {
     const copyText = e.target.previousSibling.value;

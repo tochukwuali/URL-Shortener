@@ -13,22 +13,39 @@
   background-color: $violet;
   border-radius: 5px;
   margin: 0 auto;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
   input {
     height: 50px;
     width: 80%;
     padding: 0 30px;
     margin: 25px 0px 25px 40px;
     border-radius: 5px;
+    @media (max-width: 700px) {
+      margin: 25px 20px 10px;
+      width: auto;
+    }
   }
   ::placeholder {
     color: $grayish-violet;
   }
   button {
     height: 50px;
-    min-width: 80px;
+    min-width: 120px;
     border-radius: 5px;
     padding: 10px 30px;
     margin-right: 20px;
+    @media(max-width: 1000px) {
+      padding: 10px 20px;
+    }
+    @media (max-width: 700px) {
+      margin-top: 10px;
+    }
   }
   p {
     color: $red;
