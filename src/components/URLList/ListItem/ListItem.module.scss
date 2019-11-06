@@ -14,10 +14,10 @@
     flex-direction: column;
   }
   @media(max-width: 800px) {
-    padding-left: 20px;
+    padding: 0 20px;
   }
   @media(max-width: 600px) {
-    padding-left: 10px;
+    padding:0 10px;
   }
   input {
     color: $cyan;

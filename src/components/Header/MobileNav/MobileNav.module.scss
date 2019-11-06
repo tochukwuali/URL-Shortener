@@ -30,6 +30,8 @@
   transition-property: all;
   transition-duration: 1s;
   transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  position: absolute;
+  width: 100%;
   a + a {
     padding-top: 10px;
   }

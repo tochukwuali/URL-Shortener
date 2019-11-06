@@ -8,6 +8,9 @@
   @media (max-width: 1024px) {
     padding: 20px 40px;
   }
+  @media (max-width: 700px) {
+    flex-direction: column-reverse;
+  }
   p {
     color: $grayish-violet;
     line-height: 1.5;
@@ -20,8 +23,12 @@
   }
   div:nth-of-type(2) {
     text-align: right;
+
   }
   img {
     width: 99%;
+    @media (max-width: 700px) {
+      width: 80%;
+    }
   }
 }

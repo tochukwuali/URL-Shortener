@@ -4,6 +4,9 @@
   width: 60%;
   position: relative;
   z-index: 1;
+  @media (max-width: 700px) {
+    width: 100%;
+  }
 }
 
 .feature:nth-of-type(2) {
@@ -30,6 +33,10 @@ p {
   width: 90%;
   padding: 10px 30px 0;
   margin: 0 30px 0;
+  @media (max-width: 700px) {
+    width: 100%;
+    margin: 0 auto;
+  }
   div {
     display: block;
     width: 70px;
@@ -40,6 +47,7 @@ p {
     @media (max-width:900px) {
       margin: 0 auto;
     }
+
     img {
       position: absolute;
       top: 15px;
@@ -56,6 +64,10 @@ p {
   border-bottom-right-radius: 5px;
   padding: 30px;
   margin: 0 30px 40px;
+  @media (max-width: 700px) {
+    width: 100%;
+    margin: 0 auto 40px;
+  }
 }
 
 .feature:not(:last-child) .box:before {
@@ -73,5 +85,6 @@ p {
     width: 10px;
     top: 300px;
     right: 220px;
+    display: none;
   }
 }
