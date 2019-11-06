@@ -11,6 +11,11 @@
   @media (max-width: 700px) {
     flex-direction: column-reverse;
   }
+  div:first-of-type {
+    @media (max-width: 700px) {
+      text-align: center;
+   }
+  }
   p {
     color: $grayish-violet;
     line-height: 1.5;
@@ -23,7 +28,6 @@
   }
   div:nth-of-type(2) {
     text-align: right;
-
   }
   img {
     width: 99%;
