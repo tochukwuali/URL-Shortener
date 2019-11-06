@@ -7,6 +7,7 @@ import URLList from './components/URLList/URLList';
 import Features from './components/Features/Features';
 import Boost from './components/Boost/Boost';
 import Footer from './components/Footer/Footer';
+import Backdrop from './components/UI/Backdrop/Backdrop';
 
 const App = () => {
   const [inputValue, setInputValue] = useState('');
@@ -14,6 +15,7 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [urls, setUrls] = useState([]);
   const [isEmpty, setIsEmpty] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     getURLs();
@@ -63,9 +65,18 @@ const App = () => {
     document.body.removeChild(inputTemp);
   }
 
+  const mobileNavHandler = () => {
+    setIsVisible(!isVisible);
+  }
+
   return (
     <div className="App">
-      <Header/>
+      <Backdrop
+        show={isVisible}
+        clicked={mobileNavHandler}/>
+      <Header
+        clicked={mobileNavHandler}
+        visible={isVisible}/>
       <Hero/>
       <Input
         inputChanged={onChangeHandler}

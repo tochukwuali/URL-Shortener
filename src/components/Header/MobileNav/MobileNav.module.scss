@@ -1,0 +1,49 @@
+@import '../../../variables.scss';
+
+.MobileNav {
+  position: relative;
+  z-index: 500;
+}
+
+.HeaderContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Logo {
+  @media(max-width: 800px) {
+      display: inline-block;
+  }
+  display: none;
+}
+
+.Nav.open {
+  display: flex;
+  flex-direction: column;
+  color: $font-color-secondary;
+  font-weight: $bold;
+  align-items: center;
+  background-color: $violet;
+  border-radius: 10px;
+  max-height: 250px;
+  padding-top: 20px;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  a + a {
+    padding-top: 10px;
+  }
+  button {
+    padding: 10px 30px;
+    margin-left: 0;
+    margin-top: 10px;
+    border-radius: 20px;
+    width: 200px;
+  }
+}
+
+.Nav {
+  max-height: 0px;
+  padding-top: 0;
+  overflow-y: hidden;
+}

@@ -1,8 +1,10 @@
 import React from 'react';
 import classes from './Header.module.scss';
 import Logo from '../../assets/img/logo.svg';
+import MobileNav from './MobileNav/MobileNav';
 
-const Header = () => {
+const Header = (props) => {
+
   return (
     <header>
       <nav>
@@ -21,6 +23,9 @@ const Header = () => {
           <button>Sign Up</button>
         </div>
       </nav>
+      <MobileNav
+        clicked={props.clicked}
+        visible={props.visible}/>
     </header>
   )
 }

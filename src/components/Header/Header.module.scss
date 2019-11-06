@@ -4,11 +4,17 @@ header {
   background-color: $background;
   color: $font-color;
   padding: 40px 120px;
+  @media (max-width: 1024px) {
+    padding: 20px 40px;
+  }
   nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     color: $grayish-violet;
+    @media (max-width: 800px) {
+      display: none;
+    }
     span {
       vertical-align: top;
     }
