@@ -16,6 +16,7 @@ const App = () => {
   const [urls, setUrls] = useState([]);
   const [isEmpty, setIsEmpty] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
+  const [copied, setCopied] = useState(null);
 
   useEffect(() => {
     getURLs();
@@ -45,7 +46,8 @@ const App = () => {
           const newURLs = [...urls];
           newURLs.unshift({url: inputValue, shortURL: `https://rel.ink/${res.data.hashid}`});
           setUrls(newURLs);
-          localStorage.setItem('URLs',JSON.stringify(newURLs))
+          localStorage.setItem('URLs',JSON.stringify(newURLs));
+          setInputValue('');
         })
         .catch(err => {
           setIsError(true);
@@ -63,6 +65,7 @@ const App = () => {
     inputTemp.setSelectionRange(0, 99999);
     document.execCommand("copy");
     document.body.removeChild(inputTemp);
+    setCopied(copyText);
   }
 
   const mobileNavHandler = () => {
@@ -87,7 +90,8 @@ const App = () => {
         empty={isEmpty}/>
       <URLList
         urls={urls}
-        copy={copyHandler}/>
+        copy={copyHandler}
+        copied={copied}/>
       <Features/>
       <Boost/>
       <Footer/>

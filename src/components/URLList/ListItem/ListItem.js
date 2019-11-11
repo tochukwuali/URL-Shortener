@@ -1,20 +1,20 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import classes from './ListItem.module.scss';
 
 const ListItem = (props) => {
-  const [copied, setCopied] = useState(false);
-  useEffect(() => {
-    setCopied(false)
-  }, []);
-
   let button = <button
     onClick={(e) => {
       props.copy(e);
-      setCopied(true);
     }
     }>Copy</button>
-  if(copied) {
-    button = <button className={classes.copied}>Copied!</button>
+
+  if(props.copied) {
+    button = <button
+      className={classes.copied}
+      onClick={(e) => {
+        props.copy(e);
+      }
+      }>Copied!</button>
   }
 
   return (
