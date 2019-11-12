@@ -28,6 +28,9 @@
 
 p {
   color: $grayish-violet;
+  @media (max-width: 400px) {
+    font-size: 0.8rem;
+  }
 }
 
 .img {
@@ -75,7 +78,7 @@ p {
   @media (max-width: 900px) {
     height: 100px;
     width: 10px;
-    top: 200px;
+    top: 90%;
     right: 49%;
   }
 }
