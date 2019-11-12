@@ -4,6 +4,9 @@
   width: 60%;
   position: relative;
   z-index: 1;
+  @media (max-width: 900px) {
+    margin: 0 auto 30px;
+  }
   @media (max-width: 700px) {
     width: 100%;
   }
@@ -12,7 +15,7 @@
 .feature:nth-of-type(2) {
   margin-top: 80px;
   @media (max-width: 900px) {
-    margin: 0 auto;
+    margin: 0 auto 30px;
   }
 }
 
@@ -28,31 +31,14 @@ p {
 }
 
 .img {
-  background: $background-purple;
-  background: linear-gradient(180deg, $background-purple 50%, $background 50%);
-  width: 90%;
-  padding: 10px 30px 0;
-  margin: 0 30px 0;
-  @media (max-width: 700px) {
-    width: 100%;
-    margin: 0 auto;
-  }
-  div {
-    display: block;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: $violet;
-    position: relative;
-    @media (max-width:900px) {
-      margin: 0 auto;
-    }
-
-    img {
-      position: absolute;
-      top: 15px;
-      left: 15px;
-    }
+  background: $violet;
+  padding: 15px 15px 0;
+  margin: -65px 30px 20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  @media (max-width: 900px) {
+    margin: -65px auto 20px;
   }
 }
 
@@ -60,15 +46,21 @@ p {
   display: block;
   background: $background;
   width: 90%;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-radius: 5px;
   padding: 30px;
   margin: 0 30px 40px;
+  position: relative;
   @media (max-width: 700px) {
     width: 100%;
     margin: 0 auto 40px;
   }
 }
+
+.feature:last-child img {
+  	left: -5px;
+  	position: relative;
+  	top: -3px;
+  }
 
 .feature:not(:last-child) .box:before {
   content: '';
@@ -83,8 +75,7 @@ p {
   @media (max-width: 900px) {
     height: 100px;
     width: 10px;
-    top: 300px;
-    right: 220px;
-    display: none;
+    top: 200px;
+    right: 49%;
   }
 }

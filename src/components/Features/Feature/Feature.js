@@ -4,12 +4,11 @@ import classes from './Feature.module.scss';
 const Feature = (props) => {
   return (
     <div className={classes.feature}>
-      <div className={classes.img}>
-        <div>
+
+      <div className={classes.box}>
+        <div className={classes.img}>
           <img src={props.img} alt=""/>
         </div>
-      </div>
-      <div className={classes.box}>
         <h3>{props.heading}</h3>
         <p>{props.paragraph}</p>
       </div>
