@@ -4,7 +4,7 @@ import Image from '../../assets/img/illustration-working.svg';
 
 const Hero = () => {
   return (
-    <div className={classes.Hero}>
+    <div className={classes.Hero}> 
       <div>
         <h1>More than just shorter links</h1>
         <p>Build your brand’s recognition and get detailed insights

@@ -25,7 +25,7 @@ const Header = (props) => {
       </nav>
       <MobileNav
         clicked={props.clicked}
-        visible={props.visible}/>
+        visible={props.visible}/> 
     </header>
   )
 }

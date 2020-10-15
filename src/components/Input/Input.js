@@ -11,7 +11,7 @@ const Input = (props) => {
       setIsVisible(true);
     } else {
       setIsVisible(false);
-    }
+    } 
   }, [props.empty])
 
   useEffect(() => {

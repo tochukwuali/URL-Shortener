@@ -65,7 +65,7 @@ const App = () => {
     inputTemp.setSelectionRange(0, 99999);
     document.execCommand("copy");
     document.body.removeChild(inputTemp);
-    setCopied(copyText);
+    setCopied(copyText); 
   }
 
   const mobileNavHandler = () => {

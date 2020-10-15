@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './XIcon.module.scss';
 
 const XIcon = (props) => {
-  
+   
   let attachedClasses = [classes.icon];
   if(props.open) {
     attachedClasses = [classes.icon, classes.open];
